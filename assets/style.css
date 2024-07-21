@@ -107,6 +107,7 @@ h4 {
 .seccion-blog p {
     font-size: 1rem;
     line-height: 1.5rem;
+    text-align: justify;
 }
 
 .recetas {
@@ -198,4 +199,62 @@ footer{
     max-height: auto;
     display: block;
     margin: auto;
+}
+
+/* USO MEDIA QUERY */
+@media(max-width: 576px){
+    .logo{
+        font-size: 1rem;
+    }
+
+    .contenedor-principal{
+        padding: 0 .6rem;
+        grid-template-columns: 50% 50%;
+    }
+
+    h3{
+        font-size: 1.1rem;
+    }
+
+    .seccion-blog p{
+        font-size: .7rem;
+    }
+
+    h4{
+        font-size: 0.8rem;
+    }
+
+    .btn-entrada{
+        width: 100px;
+        height: 30px;
+        font-size: .5rem;
+    }
+
+    .btn-info{
+        padding: 0.5rem;
+        font-size: 0.5rem;
+    }
+}
+
+@media(max-width: 768px) AND (max-width: 1024px){
+    .contenedor-menu{
+        grid-template-columns: 60% 40%;
+    }
+
+    .btn-info{
+        padding: .5rem;
+        font-size: .7rem;
+    }
+}
+
+@media(max-width: 1280px){
+    .contenedor-menu{
+        grid-template-columns: 60% 40%;
+    }
+
+
+    .btn-info{
+        padding: .5rem;
+        font-size: .7rem;
+    }
 }
